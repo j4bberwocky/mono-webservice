@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bcc6b0a3-7703-4e14-bcb9-c20e44ca9bcc" activeEnvironment="Default" name="test-mono-webservice" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="6971a5fb-7db6-4385-a789-65a8cc7b4fb9" wsaVersion="NONE" name="ExampleServiceSoap12" type="wsdl" bindingName="{http://www.example.org/}ExampleServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://127.0.0.1:8080/ExampleService.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint></con:endpoints><con:operation id="73f5b45d-caf4-4bcb-bd1f-367f20e52184" isOneWay="false" action="http://www.example.org/addNumbers" name="addNumbers" bindingOperationName="addNumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0e6d0c4d-f8d4-4518-839c-8ab8f4d3e601" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:addNumbers>\r
+         <exam:firstNumber>?</exam:firstNumber>\r
+         <exam:secondNumber>?</exam:secondNumber>\r
+      </exam:addNumbers>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/ExampleServiceSoap/addNumbersRequest"/></con:call></con:operation><con:operation id="4e3255c8-d636-4366-9f4c-e3d4302be7ae" isOneWay="false" action="http://www.example.org/echoString" name="echoString" bindingOperationName="echoString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6f59cd3e-0511-42b1-90e7-db1f6f201779" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:echoString>\r
+         <!--Optional:-->\r
+         <exam:testString>?</exam:testString>\r
+      </exam:echoString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/ExampleServiceSoap/echoStringRequest"/></con:call></con:operation><con:operation id="306466ba-3af6-41e4-97c7-21b2bca892ba" isOneWay="false" action="http://www.example.org/getExampleObject" name="getExampleObject" bindingOperationName="getExampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fb8306f4-e22a-48c3-9eed-b2175a036200" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:getExampleObject/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/ExampleServiceSoap/getExampleObjectRequest"/></con:call></con:operation><con:operation id="62171c7f-3888-4595-98ba-8093951c2a9c" isOneWay="false" action="http://www.example.org/getExampleObjects" name="getExampleObjects" bindingOperationName="getExampleObjects" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d8761fdf-6d37-42bc-947e-a6808bdacda5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:getExampleObjects/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/ExampleServiceSoap/getExampleObjectsRequest"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="c0bcc640-4e53-4125-8b46-fef6aa043422" wsaVersion="NONE" name="ExampleServiceSoap" type="wsdl" bindingName="{http://www.example.org/}ExampleServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://127.0.0.1:8080/ExampleService.asmx?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://127.0.0.1:8080/ExampleService.asmx?wsdl"><con:part><con:url>http://127.0.0.1:8080/ExampleService.asmx?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://www.example.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://www.example.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Example web service in C#</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.example.org/">
+      <s:element name="echoString">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="testString" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="echoStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="echoStringResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addNumbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="firstNumber" type="s:int"/>
+            <s:element minOccurs="1" maxOccurs="1" name="secondNumber" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="addNumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="addNumbersResult" type="s:int"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getExampleObject">
+        <s:complexType/>
+      </s:element>
+      <s:element name="getExampleObjectResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getExampleObjectResult" type="tns:ExampleObject"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExampleObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="exampleNameValue" type="s:string"/>
+          <s:element minOccurs="1" maxOccurs="1" name="exampleNumberValue" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="exampleArrayOfValues" type="tns:ArrayOfInt"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getExampleObjects">
+        <s:complexType/>
+      </s:element>
+      <s:element name="getExampleObjectsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getExampleObjectsResult" type="tns:ExampleObjectsResponse"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ExampleObjectsResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ExampleObjects" type="tns:ArrayOfExampleObject"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfExampleObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ExampleObject" nillable="true" type="tns:ExampleObject"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="string" nillable="true" type="s:string"/>
+      <s:element name="int" type="s:int"/>
+      <s:element name="ExampleObject" nillable="true" type="tns:ExampleObject"/>
+      <s:element name="ExampleObjectsResponse" nillable="true" type="tns:ExampleObjectsResponse"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="echoStringSoapIn">
+    <wsdl:part name="parameters" element="tns:echoString"/>
+  </wsdl:message>
+  <wsdl:message name="echoStringSoapOut">
+    <wsdl:part name="parameters" element="tns:echoStringResponse"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:addNumbers"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:addNumbersResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectSoapIn">
+    <wsdl:part name="parameters" element="tns:getExampleObject"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectSoapOut">
+    <wsdl:part name="parameters" element="tns:getExampleObjectResponse"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectsSoapIn">
+    <wsdl:part name="parameters" element="tns:getExampleObjects"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectsSoapOut">
+    <wsdl:part name="parameters" element="tns:getExampleObjectsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="echoStringHttpGetIn">
+    <wsdl:part name="testString" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="echoStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersHttpGetIn">
+    <wsdl:part name="firstNumber" type="s:string"/>
+    <wsdl:part name="secondNumber" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersHttpGetOut">
+    <wsdl:part name="Body" element="tns:int"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectHttpGetIn"/>
+  <wsdl:message name="getExampleObjectHttpGetOut">
+    <wsdl:part name="Body" element="tns:ExampleObject"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectsHttpGetIn"/>
+  <wsdl:message name="getExampleObjectsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ExampleObjectsResponse"/>
+  </wsdl:message>
+  <wsdl:message name="echoStringHttpPostIn">
+    <wsdl:part name="testString" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="echoStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersHttpPostIn">
+    <wsdl:part name="firstNumber" type="s:string"/>
+    <wsdl:part name="secondNumber" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="addNumbersHttpPostOut">
+    <wsdl:part name="Body" element="tns:int"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectHttpPostIn"/>
+  <wsdl:message name="getExampleObjectHttpPostOut">
+    <wsdl:part name="Body" element="tns:ExampleObject"/>
+  </wsdl:message>
+  <wsdl:message name="getExampleObjectsHttpPostIn"/>
+  <wsdl:message name="getExampleObjectsHttpPostOut">
+    <wsdl:part name="Body" element="tns:ExampleObjectsResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="ExampleServiceSoap">
+    <wsdl:operation name="echoString">
+      <wsdl:documentation>Echos back a string</wsdl:documentation>
+      <wsdl:input message="tns:echoStringSoapIn"/>
+      <wsdl:output message="tns:echoStringSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <wsdl:documentation>Adds two numbers together and returns an integer</wsdl:documentation>
+      <wsdl:input message="tns:addNumbersSoapIn"/>
+      <wsdl:output message="tns:addNumbersSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <wsdl:documentation>Returns an object</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectSoapIn"/>
+      <wsdl:output message="tns:getExampleObjectSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <wsdl:documentation>Returns an array of objects (aka Complex Types)</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectsSoapIn"/>
+      <wsdl:output message="tns:getExampleObjectsSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExampleServiceHttpGet">
+    <wsdl:operation name="echoString">
+      <wsdl:documentation>Echos back a string</wsdl:documentation>
+      <wsdl:input message="tns:echoStringHttpGetIn"/>
+      <wsdl:output message="tns:echoStringHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <wsdl:documentation>Adds two numbers together and returns an integer</wsdl:documentation>
+      <wsdl:input message="tns:addNumbersHttpGetIn"/>
+      <wsdl:output message="tns:addNumbersHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <wsdl:documentation>Returns an object</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectHttpGetIn"/>
+      <wsdl:output message="tns:getExampleObjectHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <wsdl:documentation>Returns an array of objects (aka Complex Types)</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectsHttpGetIn"/>
+      <wsdl:output message="tns:getExampleObjectsHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExampleServiceHttpPost">
+    <wsdl:operation name="echoString">
+      <wsdl:documentation>Echos back a string</wsdl:documentation>
+      <wsdl:input message="tns:echoStringHttpPostIn"/>
+      <wsdl:output message="tns:echoStringHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <wsdl:documentation>Adds two numbers together and returns an integer</wsdl:documentation>
+      <wsdl:input message="tns:addNumbersHttpPostIn"/>
+      <wsdl:output message="tns:addNumbersHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <wsdl:documentation>Returns an object</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectHttpPostIn"/>
+      <wsdl:output message="tns:getExampleObjectHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <wsdl:documentation>Returns an array of objects (aka Complex Types)</wsdl:documentation>
+      <wsdl:input message="tns:getExampleObjectsHttpPostIn"/>
+      <wsdl:output message="tns:getExampleObjectsHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExampleServiceSoap" type="tns:ExampleServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="echoString">
+      <soap:operation soapAction="http://www.example.org/echoString" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <soap:operation soapAction="http://www.example.org/addNumbers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <soap:operation soapAction="http://www.example.org/getExampleObject" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <soap:operation soapAction="http://www.example.org/getExampleObjects" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExampleServiceSoap12" type="tns:ExampleServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="echoString">
+      <soap12:operation soapAction="http://www.example.org/echoString" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <soap12:operation soapAction="http://www.example.org/addNumbers" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <soap12:operation soapAction="http://www.example.org/getExampleObject" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <soap12:operation soapAction="http://www.example.org/getExampleObjects" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExampleServiceHttpGet" type="tns:ExampleServiceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="echoString">
+      <http:operation location="/echoString"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <http:operation location="/addNumbers"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <http:operation location="/getExampleObject"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <http:operation location="/getExampleObjects"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExampleServiceHttpPost" type="tns:ExampleServiceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="echoString">
+      <http:operation location="/echoString"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addNumbers">
+      <http:operation location="/addNumbers"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObject">
+      <http:operation location="/getExampleObject"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExampleObjects">
+      <http:operation location="/getExampleObjects"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExampleService">
+    <wsdl:documentation>Example web service in C#</wsdl:documentation>
+    <wsdl:port name="ExampleServiceSoap" binding="tns:ExampleServiceSoap">
+      <soap:address location="http://127.0.0.1/ExampleService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ExampleServiceSoap12" binding="tns:ExampleServiceSoap12">
+      <soap12:address location="http://127.0.0.1/ExampleService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ExampleServiceHttpGet" binding="tns:ExampleServiceHttpGet">
+      <http:address location="http://127.0.0.1/ExampleService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="ExampleServiceHttpPost" binding="tns:ExampleServiceHttpPost">
+      <http:address location="http://127.0.0.1/ExampleService.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint></con:endpoints><con:operation id="7bf75fab-665f-4f0c-bfee-499011516336" isOneWay="false" action="http://www.example.org/addNumbers" name="addNumbers" bindingOperationName="addNumbers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="836a134e-6d31-409d-8e7b-9b33cb08fb4b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:8080/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://www.example.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <exam:addNumbers>\r
+         <exam:firstNumber>1</exam:firstNumber>\r
+         <exam:secondNumber>2</exam:secondNumber>\r
+      </exam:addNumbers>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/addNumbers"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="e9585695-e5c7-4f94-9914-6f10bb7c8a83" isOneWay="false" action="http://www.example.org/echoString" name="echoString" bindingOperationName="echoString" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1640a42e-e736-461e-a8af-e8c6c38a680b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1:8080/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://www.example.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <exam:echoString>\r
+         <!--Optional:-->\r
+         <exam:testString>?</exam:testString>\r
+      </exam:echoString>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/echoString"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="07445ebd-f019-4d3f-992a-1564c5f5ab1c" isOneWay="false" action="http://www.example.org/getExampleObject" name="getExampleObject" bindingOperationName="getExampleObject" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="36bbe73e-f3d8-4cd7-84fd-f0a9843e239a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://www.example.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <exam:getExampleObject/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/getExampleObject"/></con:call></con:operation><con:operation id="71e395a7-06c3-4922-853e-2348b8c37c9e" isOneWay="false" action="http://www.example.org/getExampleObjects" name="getExampleObjects" bindingOperationName="getExampleObjects" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e6076881-d234-4527-8c72-443e1982cf39" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:exam="http://www.example.org/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <exam:getExampleObjects/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.example.org/getExampleObjects"/></con:call></con:operation></con:interface><con:testSuite id="7d6d3a6d-827b-49b6-886d-083b109f7a08" name="ExampleServiceSoap12 TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="308f8515-6840-42ed-93e6-7b55f91d2782" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="addNumbers TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="714a0bfa-3c81-488c-be01-4eda00ca3c0c" name="addNumbers"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ExampleServiceSoap12</con:interface><con:operation>addNumbers</con:operation><con:request name="addNumbers" id="86e02d02-a74a-4a5a-b028-35dfa54668c2"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:addNumbers>\r
+         <exam:firstNumber>?</exam:firstNumber>\r
+         <exam:secondNumber>?</exam:secondNumber>\r
+      </exam:addNumbers>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.example.org/ExampleServiceSoap/addNumbersRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="898197ce-454d-49f5-91cc-17437b74581b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="echoString TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="2b07f65a-ae72-4f19-a356-721659fcf045" name="echoString"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ExampleServiceSoap12</con:interface><con:operation>echoString</con:operation><con:request name="echoString" id="fbc3ac7c-03dd-4c5d-86b9-3853b880da38"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:echoString>\r
+         <!--Optional:-->\r
+         <exam:testString>?</exam:testString>\r
+      </exam:echoString>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.example.org/ExampleServiceSoap/echoStringRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="202bf30f-cdac-4e2e-9a1c-5cd266ba6187" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getExampleObject TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="e5d443d3-060a-4ef6-bbb6-c307152f22cb" name="getExampleObject"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ExampleServiceSoap12</con:interface><con:operation>getExampleObject</con:operation><con:request name="getExampleObject" id="e14cf45b-b5b4-4205-8947-59b06b82580f"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:getExampleObject/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.example.org/ExampleServiceSoap/getExampleObjectRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="a99e2899-1273-4c67-a728-ec2e73c48347" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getExampleObjects TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="68408ef9-1844-4159-a25c-fd7331c0d974" name="getExampleObjects"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>ExampleServiceSoap12</con:interface><con:operation>getExampleObjects</con:operation><con:request name="getExampleObjects" id="f128096e-afc6-4571-84c2-1726aa5e0a82"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://127.0.0.1/ExampleService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:exam="http://www.example.org/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <exam:getExampleObjects/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://www.example.org/ExampleServiceSoap/getExampleObjectsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
